@@ -1,3 +1,16 @@
-<h1>{{ title }}</h1>
-
-<router-outlet></router-outlet>
+<h1>Welcome to {{ data.title }} !</h1>
+<img
+  width="400"
+  alt="Dolphin Logo"
+  (click)="onLogoClicked()"
+  src="https://oceana.org/sites/default/files/_31.jpg"
+/>
+<div>
+  <label for="demo"> Demo </label>
+  <input
+    class="demo"
+    (keyup)="onKeyUp(titleInput.value)"
+    [value]="data.title"
+    #titleInput
+  />
+</div>
