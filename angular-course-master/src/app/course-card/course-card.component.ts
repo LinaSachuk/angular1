@@ -12,4 +12,10 @@ export class CourseCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cardStyles(){
+    return {
+      'text-decoration': 'underline',
+
+    }
+  }
 }
